@@ -1,0 +1,1 @@
+A continuación, se muestra el código implementado en la cabina IoMT, Este código se debe cargar al repositorio de GitHub y Vincularla al Hosting Heroku, además, se deben cargar imágenes, carpetas, que complementan al funcionamiento del código, también las rutas de los archivos, carpetas e imágenes se deben especificar en la ruta que se desee almacenar el código.

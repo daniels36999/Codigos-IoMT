@@ -1,0 +1,149 @@
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+div#Separa_Grafica{
+	margin:auto;
+	margin-top:30px;
+	width:1000px;
+	height:420px;
+}
+
+div#centrar12{
+	margin-left: center;
+	margin-right: auto;
+}
+div#centrar2{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#Grafica_Izqui{
+	float:left;
+	width:200px;
+	height:400px;
+}
+
+div#Posicion_Botton{
+	margin-bottom:50px;
+	float:right;
+	width:230px;
+	height:40px;
+/* 	background-color:#B42724; */
+	text-align: center;
+
+ ;
+}
+
+
+/* ESTILO DEL BOTON */
+/* ---------------------------------------------*/
+
+.wrap1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1{
+  min-width: 100px;
+  min-height: 30px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;/* COLOR LETRA */
+  background: #45D000;
+  background: linear-gradient(90deg, rgba(69, 208, 0,1) 0%, rgba(168, 238, 133,1) 100%);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 12px 12px 24px rgba(69, 208, 0,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button1::before {
+content: '';
+  border-radius: 500px;
+  min-width: calc(130px + 12px);
+  min-height: calc(40px + 12px);
+  border: 6px solid #45D000; /* COLOR BORDE */
+  box-shadow: 0 0 60px rgba(85, 255, 0,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button1:hover, .button1:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.button1:hover::before, .button1:focus::before {
+  opacity: 1;
+}
+
+.button1::after {
+  content: '';
+  width: 10px; height: 10px;
+  border-radius: 100%;
+  border: 6px solid #45D000;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button1:hover::after, .button1:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+/* ESTILO DEL BOTON */
+/* ---------------------------------------------*/
+
+.button2 {
+	margin-top:center;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-weight: bold;
+}
+
+.button2 {width: 500px;}
+
+
+
